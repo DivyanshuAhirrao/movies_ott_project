@@ -1,0 +1,82 @@
+header{
+    height: 10vh;
+    line-height: 10vh;
+    background-color: rgb(13, 13, 87);
+}
+.loggo {
+    height: 10vh;
+    width: 10rem;
+}
+header a{
+    color: rgb(240, 115, 58);
+    margin-left: 30px;
+    position: relative;
+    bottom: 17px;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+header i{
+    quotes: 40px;
+    color: aliceblue;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 40%;
+    border: 3px solid #fff;
+    margin: 0 10px;
+    font-size: 16px;
+}
+header button {
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.account {
+    margin-right: 1rem;
+    position: relative;
+    bottom: 17px;
+}
+.toggle {
+    display: none;
+    transition: ease-in-out all 2s;    
+}
+.fa-bars{
+    position: relative;
+    top: -2px;
+}
+@media only screen and (max-width:900px) {
+    header nav .flexSB{
+        display: none;
+    }
+    .account {
+        display: none;
+    }
+    .toggle{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px; 
+        margin: auto;
+        background: none;
+        cursor: pointer;
+        transition: ease-in-out all 2s;    
+    }
+    .navMenu-list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(15, 10, 1);
+        width: 50%;
+        height: 100vh;
+        z-index: 999;
+        transition: ease-in-out all 2s;      
+    }
+    .navMenu-list a{
+        position: relative;
+        top: 25px;
+        font-size: 25px;
+    }
+}
